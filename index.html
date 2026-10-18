@@ -75,7 +75,7 @@
             <h2>Contact Me</h2>
 
             <!-- Contact form -->
-            <form>
+            <form id="contact-form" novalidate>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -87,6 +87,8 @@
 
                 <button type="submit">Send</button>
             </form>
+            <!-- Display contact form feedback -->
+            <p id="form-message" role="status" aria-live="polite"></p>
         </section>
 
     </main>
