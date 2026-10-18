@@ -1,5 +1,4 @@
 //Display a greeting based on the current time
-
 const greeting = document.getElementById("greeting");
 const hour = new Date().getHours(); //Get the current hour
 
@@ -11,3 +10,17 @@ if (hour < 12) {
 } else {
     greeting.textContent = "Good evening!";
 }
+
+//Show or hide additional information
+const toggleButton = document.getElementById("toggle-info");
+const moreInfo = document.getElementById("more-info");
+
+toggleButton.addEventListener("click", function () {
+    if (moreInfo.hidden) {
+        moreInfo.hidden = false;
+        toggleButton.textContent = "Show Less";
+    } else {
+        moreInfo.hidden = true;
+        toggleButton.textContent = "Show More";
+    }
+});
