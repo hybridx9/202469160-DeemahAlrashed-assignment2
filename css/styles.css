@@ -64,6 +64,12 @@ h2 {
     padding: 15px;
     margin-top: 15px;
     border-radius: 6px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Highlight project cards when hovered */
+#projects > div:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 #interests ul {
@@ -98,6 +104,7 @@ button {
     background-color: #1f3a5f;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
